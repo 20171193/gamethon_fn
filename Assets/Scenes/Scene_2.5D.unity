@@ -777,7 +777,7 @@ MonoBehaviour:
   Time: {fileID: 1410892666}
   monsterSpawner: {fileID: 1569307702}
   monsterSpeed: 10
-  curProjectileType: 2
+  curProjectileType: 0
   projectileSpeed: 50
   projectileShotTime: 0.5
   projectileNum: 1
