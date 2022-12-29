@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-
-    public int playTime;    // 현재 플레이 중인 시간
-    public int endTime;     // 게임 종료 시간
+    [Header("현재 플레이 중인 시간")]
+    [SerializeField]
+    private int playTime;    // 현재 플레이 중인 시간
+    
+    [SerializeField]
+    private int endTime;     // 게임 종료 시간
 
     private bool timerDone;
 

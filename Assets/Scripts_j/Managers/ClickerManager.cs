@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ClickerManager : MonoBehaviour
 {
-    // 한번 클릭시 획득할 재화
-    public int clickMineralAmount = 5;
-
+    [Header("클릭으로 재화 수급 가능 여부")]
     public bool enableClick = true;
+
+    [Header("클릭 당 획득 재화")]
+    public int clickMineralAmount = 5;
 
     // Start is called before the first frame update
     void Start()

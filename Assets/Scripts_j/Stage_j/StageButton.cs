@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class WaveManager : MonoBehaviour
+public class StageButton : MonoBehaviour
 {
-    private WaveData currentWave;
+    [Header("스테이지 씬")]
+    public Scene targetScene;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +20,8 @@ public class WaveManager : MonoBehaviour
         
     }
 
-    public void RegisterWave(WaveData rcv_data)
+    void OnClickStageButton()
     {
-        currentWave = rcv_data;
+
     }
 }
