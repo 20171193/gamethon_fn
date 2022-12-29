@@ -8,8 +8,8 @@ public class ProductInfo : MonoBehaviour
     [Header("생산 시간")]
     public int myTime;
 
-    [Header("획득 재화")]
-    public int myCash;
+    [Header("획득 경험치")]
+    public float myExp;
 
     [Header("획득 환경점수")]
     public int myEVN;
@@ -47,12 +47,13 @@ public class ProductInfo : MonoBehaviour
         // 스코어 추가 (환경 점수, 재화)
         if(myEVN != 0)
         {
-            ScoreManager_j.Instance.AddEVN(myEVN);
+            StatManager.Instance.AddEVN(myEVN);
         }
-        if(myCash != 0)
+        if(myExp != 0)
         {
-            ScoreManager_j.Instance.AddCash(myCash);
+            StatManager.Instance.AddPlayerEXP(myExp);
         }
+        
 
         // 생산품 제거
         Destroy(this.gameObject);

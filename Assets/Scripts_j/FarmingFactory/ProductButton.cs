@@ -7,8 +7,8 @@ public class ProductButton : MonoBehaviour
     [Header("»ý»ê ½Ã°£")]
     public int productionTime;
 
-    [Header("È¹µæ ÀçÈ­")]
-    public int productionCash;
+    [Header("È¹µæ °æÇèÄ¡")]
+    public float productionExp;
 
     [Header("È¹µæ È¯°æ Á¡¼ö")]
     public int productionEVN;
@@ -38,7 +38,7 @@ public class ProductButton : MonoBehaviour
         product.transform.SetParent(myProductList.transform);
 
         product.GetComponent<ProductInfo>().myTime = productionTime;
-        product.GetComponent<ProductInfo>().myCash = productionCash;
+        product.GetComponent<ProductInfo>().myExp = productionExp;
         product.GetComponent<ProductInfo>().myEVN = productionEVN;
     }
 }

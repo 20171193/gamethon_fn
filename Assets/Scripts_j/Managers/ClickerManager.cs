@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class ClickerManager : MonoBehaviour
 {
-    public int clickCashValue = 5;
+    // ÇÑ¹ø Å¬¸¯½Ã È¹µæÇÒ ÀçÈ­
+    public int clickMineralAmount = 5;
+
+    public bool enableClick = true;
 
     // Start is called before the first frame update
     void Start()
@@ -15,9 +18,9 @@ public class ClickerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && enableClick)
         {
-            ScoreManager_j.Instance.AddCash(clickCashValue);
+            StatManager.Instance.AddMineral(clickMineralAmount);
         }
     }
 }

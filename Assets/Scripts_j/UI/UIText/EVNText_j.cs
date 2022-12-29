@@ -14,6 +14,5 @@ public class EVNText_j : MonoBehaviour
 
     void Update()
     {
-        EVNText.text = ScoreManager_j.Instance.GetEVN().ToString();
     }
 }

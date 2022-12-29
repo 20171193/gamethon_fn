@@ -15,6 +15,6 @@ public class CashText : MonoBehaviour
 
     void Update()
     {
-        cashText.text = ScoreManager_j.Instance.GetCash().ToString();
+        cashText.text = StatManager.Instance.Own_Mineral.ToString();
     }
 }

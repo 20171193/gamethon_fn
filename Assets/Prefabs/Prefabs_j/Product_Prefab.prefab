@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTime: 0
-  myCash: 0
+  myExp: 0
   myEVN: 0
   harvestButton: {fileID: 933918607465347183}
 --- !u!1 &1062545968771359654

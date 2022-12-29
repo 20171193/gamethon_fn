@@ -48,24 +48,20 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerDone = true;
+        // 초당 미네랄 생산 코루틴 
+        StartCoroutine("MineMineralPerSeconds");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timerDone)
-        {
-            StartCoroutine("GetCashTimer");
-            timerDone = false;
-        }
+
     }
-    
-    IEnumerator GetCashTimer()
+    IEnumerator MineMineralPerSeconds()
     {
-        // 5초당 미네랄 생산량
-        yield return new WaitForSeconds(5.0f);
-        SpaceShipManager.Instance.UpdateCashPerSeconds();
-        timerDone = true;
+        yield return new WaitForSeconds(1.0f);
+        StatManager.Instance.AddMineral(StatManager.Instance.Mine_MineralPerSeconds);
+        StartCoroutine("MineMineralPerSeconds");
     }
+
 }

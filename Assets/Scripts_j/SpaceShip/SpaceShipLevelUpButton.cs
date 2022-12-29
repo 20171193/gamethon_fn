@@ -19,6 +19,6 @@ public class SpaceShipLevelUpButton : MonoBehaviour
     public void OnClickLevelUpButton()
     {
         // 재화 조건 추가
-        SpaceShipManager.Instance.AddLevel();
+        StatManager.Instance.AddSpaceShipLevel(1);
     }
 }
