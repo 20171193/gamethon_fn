@@ -13,7 +13,11 @@ public struct Phase
 public class MonsterSpawner_E : MonoBehaviour
 {
     public Transform[] spawnPoint;
-    public Transform bossSpawnPoint;
+    public Transform bossSpawnPoint; // 보스가 생성되는 위치
+
+    // 보스 생성시 제한되는 맵
+    public GameObject limitedMap_outside; // 외부
+    public GameObject limitedMap_spawnPoint; // 생성 위치
 
     float timer;
 
@@ -50,7 +54,7 @@ public class MonsterSpawner_E : MonoBehaviour
             if (curPhase.phase == 6)
             {
                 // 3분이 넘으면 보스 생성
-                BossSpawn();   
+                BossSpawn();
             }
         }
     }
@@ -80,4 +84,10 @@ public class MonsterSpawner_E : MonoBehaviour
         boss.transform.position = bossSpawnPoint.position;
         GameManager_E.Instance.bossHP.value = 1;
     }
+
+    void LimitedMap()
+    {
+
+    }
+
 }

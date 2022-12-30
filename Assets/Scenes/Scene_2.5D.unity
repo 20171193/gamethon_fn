@@ -835,7 +835,7 @@ Transform:
   m_Children:
   - {fileID: 1526071273}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &74417370
 CapsuleCollider2D:
@@ -1493,7 +1493,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4380,7 +4380,7 @@ Transform:
   - {fileID: 1711269752}
   - {fileID: 1003335205}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &924711709
 GameObject:
@@ -6155,7 +6155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1334871711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7355,6 +7355,7 @@ MonoBehaviour:
   - {fileID: 1655280266}
   - {fileID: 491049868}
   bossSpawnPoint: {fileID: 659757686}
+  limitedMap: {fileID: 0}
   Phases:
   - phase: 0
     spawnTime: 0.5
@@ -7968,7 +7969,7 @@ RectTransform:
   - {fileID: 6987801308505243954}
   - {fileID: 1853736177}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8765,6 +8766,7 @@ MonoBehaviour:
   - {fileID: 753154518}
   - {fileID: 1414878901}
   bossSpawnPoint: {fileID: 970652025}
+  limitedMap: {fileID: 1139155103370406571, guid: 9e583aa889dd720488b0a41ea9f7e967, type: 3}
   Phases:
   - phase: 0
     spawnTime: 0.5
